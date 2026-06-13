@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Investors — Síob</title>
+<meta name="description" content="Síob is turning Ireland's empty car seats into a community-owned travel network. The investor brief: opportunity, model, traction and the raise." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/site.css" />
+<style>
+  .keyval{display:grid;grid-template-columns:170px 1fr;gap:2px 24px;border-top:1px solid var(--hairline-green);padding-top:18px;margin-top:18px;}
+  .keyval dt{color:var(--cream-faint);font-size:13px;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;padding:8px 0;}
+  .keyval dd{margin:0;padding:8px 0;font-size:16px;color:var(--cream);}
+  .market{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  @media(max-width:760px){.market{grid-template-columns:1fr;}.keyval{grid-template-columns:1fr;gap:0;}.keyval dt{padding-bottom:0;}.keyval dd{padding-top:2px;padding-bottom:14px;border-bottom:1px solid var(--hairline-green);}}
+  .market .m{border-radius:var(--radius);padding:24px;border:1px solid var(--hairline);background:var(--white);}
+  .market .m .ring{font-family:var(--display);font-weight:800;font-size:13px;letter-spacing:0.1em;color:var(--green);}
+  .market .m .big{font-family:var(--display);font-weight:800;font-size:clamp(30px,4vw,42px);letter-spacing:-0.03em;margin:10px 0 4px;}
+  .market .m p{color:var(--ink-soft);font-size:14px;}
+  .market .m.lead-m{background:var(--green);color:var(--cream);border-color:transparent;}
+  .market .m.lead-m .ring{color:var(--lime);}
+  .fund-bar{display:flex;height:16px;border-radius:999px;overflow:hidden;margin:14px 0 22px;border:1px solid var(--hairline);}
+  .fund-bar i{display:block;height:100%;}
+  .use-row{display:flex;justify-content:space-between;align-items:center;padding:13px 0;border-bottom:1px solid var(--hairline);font-size:15.5px;}
+  .use-row b{font-family:var(--display);}
+  .dotk{width:11px;height:11px;border-radius:3px;display:inline-block;margin-right:9px;}
+  .team{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  @media(max-width:760px){.team{grid-template-columns:1fr;}}
+  .team .person .ph-img{aspect-ratio:1;border-radius:18px;background:linear-gradient(135deg,var(--green2),var(--green-deep));display:grid;place-items:center;color:var(--lime);font-family:var(--display);font-weight:800;font-size:30px;}
+  .team .person h4{margin:14px 0 2px;}
+  .team .person p{color:var(--ink-soft);font-size:14px;}
+</style>
+</head>
+<body data-page="investors" data-nav="green">
+<div id="site-nav"></div>
+
+<main>
+  <!-- hero -->
+  <section class="bg-green" style="padding-block:clamp(56px,8vw,104px) clamp(48px,6vw,84px)">
+    <div class="container">
+      <div class="split" style="align-items:center">
+        <div class="reveal in">
+          <p class="eyebrow">Investor brief</p>
+          <h1>Ireland's empty seats are a network waiting to happen<span class="dot-lime">.</span></h1>
+          <p class="lead mt-s" style="max-width:520px">Síob turns the single-occupancy car journeys Ireland makes every day into a trusted, community-owned travel network — starting with the intercity routes public transport forgets.</p>
+          <div class="cta-row mt-l">
+            <a href="contact.html#investors" class="btn btn--lime">Request the deck <span data-icon="arrow"></span></a>
+            <a href="#raise" class="btn btn--ghost">Jump to the raise</a>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="card card--green" style="padding:30px">
+            <p class="eyebrow no-rule" style="color:var(--lime)">At a glance</p>
+            <dl class="keyval">
+              <dt>Stage</dt><dd><span class="placeholder">[Pre-seed / Seed]</span></dd>
+              <dt>Raising</dt><dd><span class="placeholder">[€X.X]M</span> on a <span class="placeholder">[€X]M</span> <span class="placeholder">[SAFE / priced]</span></dd>
+              <dt>Committed</dt><dd><span class="placeholder">[€X]M</span> (<span class="placeholder">[XX]%</span>)</dd>
+              <dt>Founded</dt><dd>2025 · Dublin, Ireland</dd>
+              <dt>Market</dt><dd>Ireland first, RoI + NI</dd>
+              <dt>Status</dt><dd>Private beta · TestFlight</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- the problem -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="maxw-md reveal">
+        <p class="eyebrow">The problem</p>
+        <h2>Most cars on Irish roads are nearly empty.</h2>
+        <p class="lead mt-s">Intercity public transport is thin outside the Dublin corridor, fares are rising, and the vast majority of car journeys carry a single person. The seats already exist — there's just no trusted way to share them.</p>
+      </div>
+      <div class="statrow mt-l reveal">
+        <div class="stat"><div class="num"><span class="placeholder">[XX]%</span></div><div class="lbl">of Irish car trips are single-occupancy</div></div>
+        <div class="stat"><div class="num"><span class="placeholder">[X.X]M</span></div><div class="lbl">private cars registered in Ireland</div></div>
+        <div class="stat"><div class="num"><span class="placeholder">[€XX]</span></div><div class="lbl">avg. Dublin–Galway return by car</div></div>
+        <div class="stat"><div class="num"><span class="placeholder">[XX]%</span></div><div class="lbl">rural towns without an hourly service</div></div>
+      </div>
+      <p class="mt-m" style="font-size:13px;color:var(--ink-faint)">Figures to be sourced from <span class="placeholder">[CSO / NTA / Eurostat]</span> in the data room.</p>
+    </div>
+  </section>
+
+  <!-- why now -->
+  <section class="section--tight bg-green-deep">
+    <div class="container">
+      <div class="grid grid-3 reveal" style="gap:32px">
+        <div><p class="eyebrow no-rule" style="color:var(--lime)">01 — Cost</p><h4 style="margin-bottom:8px">Cost-of-living pressure</h4><p class="lead" style="font-size:16px">Households are actively looking to cut the cost of getting around. Cost-sharing is an easy yes.</p></div>
+        <div><p class="eyebrow no-rule" style="color:var(--lime)">02 — Climate</p><h4 style="margin-bottom:8px">Binding emissions targets</h4><p class="lead" style="font-size:16px">Ireland's Climate Action Plan needs modal shift. Filling existing seats is the cheapest tonne of CO₂ there is.</p></div>
+        <div><p class="eyebrow no-rule" style="color:var(--lime)">03 — Trust</p><h4 style="margin-bottom:8px">A trust-native generation</h4><p class="lead" style="font-size:16px">People who grew up with verified profiles and ratings will share a car the way they already share a home or a desk.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- market -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="maxw-md reveal">
+        <p class="eyebrow">Market</p>
+        <h2>Big enough to matter, focused enough to win.</h2>
+        <p class="lead mt-s">We start with intercity and commuter-belt routes in Ireland, then expand across the island and into comparable European markets.</p>
+      </div>
+      <div class="market mt-l reveal">
+        <div class="m"><div class="ring">TAM</div><div class="big"><span class="placeholder">[€X.XB]</span></div><p>European cost-shared car travel, annually.</p></div>
+        <div class="m"><div class="ring">SAM</div><div class="big"><span class="placeholder">[€XXXM]</span></div><p>Ireland + comparable small-market intercity travel.</p></div>
+        <div class="m lead-m"><div class="ring">SOM (3-yr)</div><div class="big"><span class="placeholder">[€XXM]</span></div><p>Realistic share of Irish intercity &amp; commuter trips.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- product -->
+  <section class="section bg-green">
+    <div class="container">
+      <div class="split">
+        <div class="reveal">
+          <p class="eyebrow">The product</p>
+          <h2>One app. Both sides of every trip.</h2>
+          <p class="lead mt-s maxw-sm">Unlike driver-vs-rider marketplaces, Síob blends both roles into one verified profile. The same person who rides on Monday can drive on Friday — which means liquidity compounds from both sides at once.</p>
+          <div class="flex wrap gap-s mt-l">
+            <span class="chip">Schedule or leave now</span>
+            <span class="chip">In-chat fare negotiation</span>
+            <span class="chip">Passenger "asks" pull supply</span>
+            <span class="chip">Verified Captains</span>
+          </div>
+          <a href="index.html#how" class="linkarrow mt-m">See how it works <span data-icon="arrow"></span></a>
+        </div>
+        <div class="order-media reveal" style="display:flex;justify-content:center">
+          <div class="js-phone" data-screen="results"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- business model -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="maxw-md reveal">
+        <p class="eyebrow">Business model</p>
+        <h2>How Síob will make money.</h2>
+        <p class="lead mt-s">We're pre-revenue by design — the beta is focused on liquidity and trust, not monetisation. When we switch revenue on, three lines are built into the model:</p>
+      </div>
+      <div class="grid grid-3 mt-l reveal">
+        <div class="card"><div class="ic" data-i="euro"></div><h4>Service fee</h4><p>A planned <span class="placeholder">[X–X]%</span> fee on the Passenger's share of each booked seat — our primary intended line.</p></div>
+        <div class="card"><div class="ic" data-i="bolt"></div><h4>Captain+ subscription</h4><p><span class="placeholder">[€X.XX]</span>/mo for power Captains: priority placement, insights, lower fees.</p></div>
+        <div class="card"><div class="ic" data-i="handshake"></div><h4>Partnerships</h4><p>Events, employers and campuses pay to seed demand on key routes <span class="placeholder">[pilot]</span>.</p></div>
+      </div>
+      <p class="mt-l reveal" style="font-size:12.5px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-faint)">Target unit economics · projected, not yet realised</p>
+      <div class="card mt-s reveal" style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px">
+        <div class="stat"><div class="num" style="color:var(--green)"><span class="placeholder">[€X.XX]</span></div><div class="lbl">target revenue / booked seat</div></div>
+        <div class="stat"><div class="num" style="color:var(--green)"><span class="placeholder">[XX]%</span></div><div class="lbl">target contribution margin</div></div>
+        <div class="stat"><div class="num" style="color:var(--green)"><span class="placeholder">[€XX]</span></div><div class="lbl">target CAC (blended)</div></div>
+        <div class="stat"><div class="num" style="color:var(--green)"><span class="placeholder">[X.X]:1</span></div><div class="lbl">LTV : CAC target</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- traction -->
+  <section class="section bg-green-deep">
+    <div class="container">
+      <div class="maxw-md reveal">
+        <p class="eyebrow no-rule" style="color:var(--lime)">Traction</p>
+        <h2>Early signal from the beta.</h2>
+        <p class="lead mt-s">We're pre-revenue and in private beta — so we measure engagement and trust, not turnover. Live numbers are shared under NDA in the data room; placeholders below show the shape of what we track.</p>
+      </div>
+      <div class="statrow mt-l reveal">
+        <div class="stat"><div class="num"><span class="placeholder">[X,XXX]</span></div><div class="lbl">beta waitlist</div></div>
+        <div class="stat"><div class="num"><span class="placeholder">[XXX]</span></div><div class="lbl">verified Captains</div></div>
+        <div class="stat"><div class="num"><span class="placeholder">[XX]%</span></div><div class="lbl">MoM trip growth</div></div>
+        <div class="stat"><div class="num"><span class="placeholder">[XX]%</span></div><div class="lbl">rider repeat rate</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- moat -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="split">
+        <div class="order-media reveal">
+          <div class="grid grid-2" style="gap:16px">
+            <div class="card" style="padding:22px"><div class="ic" data-i="users"></div><h4>Dual-role liquidity</h4><p>Both sides grow from the same user base — faster density per route.</p></div>
+            <div class="card" style="padding:22px;margin-top:26px"><div class="ic" data-i="map"></div><h4>Route-by-route density</h4><p>We win corridors one at a time, the way a marketplace should.</p></div>
+            <div class="card" style="padding:22px"><div class="ic" data-i="shield"></div><h4>Trust graph</h4><p>Verification + ratings create switching cost rivals can't copy overnight.</p></div>
+            <div class="card" style="padding:22px;margin-top:26px"><div class="ic" data-i="leaf"></div><h4>Local-first brand</h4><p>An Irish name, an Irish community. Incumbents read as foreign.</p></div>
+          </div>
+        </div>
+        <div class="reveal">
+          <p class="eyebrow">Why Síob wins</p>
+          <h2>Defensibility from day one.</h2>
+          <p class="lead mt-s maxw-sm">Carpooling is hard because liquidity is hard. Our wedge — one verified profile that drives and rides, focused corridor by corridor — builds density and trust faster than a generic two-sided model, and that density is the moat.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- the raise -->
+  <section class="section bg-green" id="raise">
+    <div class="container">
+      <div class="split" style="align-items:flex-start">
+        <div class="reveal">
+          <p class="eyebrow">The raise</p>
+          <h2>Raising <span class="placeholder">[€X.X]M</span> to own Ireland.</h2>
+          <p class="lead mt-s maxw-sm">This round takes us from beta to default-route coverage across the Republic, with the team and capital to prove repeatable corridor economics.</p>
+          <div class="keyval" style="border-top-color:var(--hairline-green)">
+            <dt>Instrument</dt><dd><span class="placeholder">[SAFE — post-money]</span></dd>
+            <dt>Target close</dt><dd><span class="placeholder">[Qx 20XX]</span></dd>
+            <dt>Runway</dt><dd><span class="placeholder">[XX]</span> months</dd>
+            <dt>Lead</dt><dd><span class="placeholder">[seeking lead]</span></dd>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="card" style="padding:30px">
+            <h4>Use of funds</h4>
+            <div class="fund-bar" style="margin-top:18px">
+              <i style="width:45%;background:var(--green)"></i>
+              <i style="width:25%;background:var(--lime)"></i>
+              <i style="width:18%;background:#7BD4C4"></i>
+              <i style="width:12%;background:var(--ink-faint)"></i>
+            </div>
+            <div class="use-row"><span><span class="dotk" style="background:var(--green)"></span>Engineering &amp; product</span><b><span class="placeholder">[45]%</span></b></div>
+            <div class="use-row"><span><span class="dotk" style="background:var(--lime)"></span>Growth &amp; route launches</span><b><span class="placeholder">[25]%</span></b></div>
+            <div class="use-row"><span><span class="dotk" style="background:#7BD4C4"></span>Trust, safety &amp; ops</span><b><span class="placeholder">[18]%</span></b></div>
+            <div class="use-row" style="border-bottom:0"><span><span class="dotk" style="background:var(--ink-faint)"></span>G&amp;A / legal</span><b><span class="placeholder">[12]%</span></b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- team -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="maxw-md reveal">
+        <p class="eyebrow">Team</p>
+        <h2>Built by people who know the routes.</h2>
+      </div>
+      <div class="team mt-l reveal">
+        <div class="person"><div class="ph-img">[ ]</div><h4><span class="placeholder">[Founder name]</span></h4><p>Co-founder &amp; CEO · <span class="placeholder">[background]</span></p></div>
+        <div class="person"><div class="ph-img">[ ]</div><h4><span class="placeholder">[Founder name]</span></h4><p>Co-founder &amp; CTO · <span class="placeholder">[background]</span></p></div>
+        <div class="person"><div class="ph-img">[ ]</div><h4><span class="placeholder">[Name / hiring]</span></h4><p>Head of Trust &amp; Safety · <span class="placeholder">[background]</span></p></div>
+      </div>
+      <p class="mt-m" style="font-size:14px;color:var(--ink-soft)">Advised by <span class="placeholder">[advisor names / domains]</span>.</p>
+    </div>
+  </section>
+
+  <!-- contact CTA -->
+  <section class="section--tight bg-lime">
+    <div class="container center maxw-md mx-auto reveal in">
+      <h2 style="color:var(--lime-ink)">Let's talk.</h2>
+      <p style="font-size:19px;color:rgba(30,43,10,0.78);margin-top:12px">Request the full deck and data room, or set up a call with the founders.</p>
+      <div class="cta-row mt-m" style="justify-content:center">
+        <a href="contact.html#investors" class="btn btn--ink">Request the deck <span data-icon="arrow"></span></a>
+        <a href="mailto:investors@siob.ie" class="btn btn--ghost" style="border-color:rgba(30,43,10,0.3);color:var(--lime-ink)">investors@<span class="placeholder">[siob.ie]</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="assets/app-screens.js"></script>
+<script src="assets/site.js"></script>
+<script>
+  (function(){
+    var SI = {
+      euro:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 7.5A6 6 0 1 0 16.5 16.5M5 10.5h7M5 13.5h6"/></svg>',
+      bolt:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3 5 13h6l-1 8 8-10h-6z"/></svg>',
+      handshake:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l4-3 5 3 5-3 4 3v6l-4 3-3-2.5"/><path d="M12 9l-2.5 2.5a1.5 1.5 0 0 0 2 2.2L14 12l2.5 2.5"/></svg>',
+      users:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 19c.6-3.3 3-5 6-5s5.4 1.7 6 5"/><path d="M16 6.2A3 3 0 0 1 16 11.8M18.5 19c-.3-2-1-3.4-2.2-4.4"/></svg>',
+      map:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"/><path d="M9 4v14M15 6v14"/></svg>',
+      shield:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.6-3 8-7 9.5C8 19 5 15.6 5 11V6z"/><path d="M9 12l2 2 4-4.5"/></svg>',
+      leaf:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19C5 11 11 5 20 5c0 9-6 15-14 15a5 5 0 0 1-1-.1z"/><path d="M5 19c2-5 5-8 10-10"/></svg>'
+    };
+    document.querySelectorAll('[data-i]').forEach(function(el){var k=el.getAttribute('data-i');if(SI[k])el.innerHTML=SI[k];});
+    document.querySelectorAll('.js-phone').forEach(function(el){ el.innerHTML = window.SIOB.phone(window.SIOB.screen(el.getAttribute('data-screen'))); });
+  })();
+</script>
+</body>
+</html>

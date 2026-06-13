@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Síob — Ireland's car-sharing community</title>
+<meta name="description" content="Síob is Ireland's car-sharing community. Every empty seat is a lift for someone — one profile, two hats: ride as a Passenger, drive as a Captain." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/site.css" />
+<style>
+  /* hero (Split layout) */
+  .hero-pad{padding-block:clamp(48px,7vw,88px) clamp(56px,8vw,104px);}
+  .hero h1{font-size:clamp(40px,5.6vw,68px);}
+
+  #hero-a .split{align-items:center;}
+  .phone-stack{position:relative;height:660px;display:flex;justify-content:center;align-items:center;}
+  .phone-stack .phone{position:absolute;}
+  .phone-stack .p1{transform:rotate(-5deg) translate(-78px,8px);z-index:1;}
+  .phone-stack .p2{transform:rotate(5deg) translate(78px,-12px);z-index:2;box-shadow:0 28px 70px rgba(8,42,32,0.4);}
+  @media(max-width:1040px){.phone-stack{height:600px;}.phone-stack .p1{transform:rotate(-5deg) translate(-58px,8px) scale(.9);}.phone-stack .p2{transform:rotate(5deg) translate(58px,-12px) scale(.9);}}
+  @media(max-width:860px){.phone-stack{height:560px;}.phone-stack .p1{transform:rotate(-5deg) translate(-46px,6px) scale(.82);}.phone-stack .p2{transform:rotate(5deg) translate(46px,-10px) scale(.82);}}
+
+  .trustline{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--cream-soft);}
+  .trustline svg{width:17px;height:17px;color:var(--lime);}
+
+  /* two hats */
+  .hat-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+  @media(max-width:760px){.hat-grid{grid-template-columns:1fr;}}
+  .hat{border-radius:var(--radius-lg);padding:30px;min-height:280px;display:flex;flex-direction:column;}
+  .hat .hic{width:52px;height:52px;border-radius:15px;display:grid;place-items:center;margin-bottom:20px;}
+  .hat--cap{background:var(--lime);color:var(--lime-ink);}
+  .hat--cap .hic{background:rgba(30,43,10,0.10);}
+  .hat--pas{background:var(--green2);color:var(--cream);border:1px solid var(--hairline-green);}
+  .hat--pas .hic{background:rgba(205,232,74,0.16);color:var(--lime);}
+  .hat h3{margin-bottom:8px;}
+  .hat--cap h3{color:var(--lime-ink);}
+  .hat .feat{margin-top:auto;padding-top:18px;display:flex;flex-direction:column;gap:9px;}
+  .hat .feat span{display:flex;gap:9px;align-items:flex-start;font-size:14.5px;line-height:1.4;}
+  .hat--cap .feat span{color:rgba(30,43,10,0.78);}
+  .hat--pas .feat span{color:var(--cream-soft);}
+  .hat .feat svg{width:18px;height:18px;flex:none;margin-top:1px;}
+  .hat--cap .feat svg{color:var(--lime-ink);}
+  .hat--pas .feat svg{color:var(--lime);}
+</style>
+</head>
+<body data-page="home" data-nav="light">
+<div id="site-nav"></div>
+
+<main>
+
+  <!-- ============ HERO — split ============ -->
+  <section class="hero bg-green" id="hero-a">
+    <div class="container hero-pad">
+      <div class="split">
+        <div class="hero-copy reveal in">
+          <div class="livepill" style="margin-bottom:26px"><span class="dot"></span> 214 lifts on Irish roads right now</div>
+          <h1><span class="hl-text">Every empty seat is a lift for someone</span><span class="dot-lime">.</span></h1>
+          <p class="lead js-sub" style="margin-top:22px;max-width:480px">Síob is Ireland's car-sharing community. Share the trip you're already making, or grab a seat with someone going your way — now or later.</p>
+          <div class="cta-row" style="margin-top:32px">
+            <a href="contact.html#beta" class="btn btn--lime">Join the beta <span data-icon="arrow"></span></a>
+            <a href="index.html#how" class="btn btn--ghost">See how it works</a>
+          </div>
+          <div class="trustline" style="margin-top:26px"><span data-i="shield"></span> Verified Captains · in-app messaging · fair, split fares</div>
+        </div>
+        <div class="order-media reveal">
+          <div class="phone-stack">
+            <div class="js-phone p1" data-screen="results"></div>
+            <div class="js-phone p2" data-screen="role"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="section bg-cream" id="how">
+    <div class="container">
+      <div class="split">
+        <div class="reveal">
+          <p class="eyebrow">How a lift comes together</p>
+          <h2>Sound, simple, and split fair.</h2>
+          <p class="lead mt-s maxw-sm">No surge pricing, no strangers-only rule. Just people going the same way, agreeing the fare up front.</p>
+          <div class="steps mt-l">
+            <div class="step"><div class="step__n">1</div><div><h4>Say where you're headed</h4><p>Pop in your route and when suits — leaving now, or scheduled for later in the week.</p></div></div>
+            <div class="step"><div class="step__n">2</div><div><h4>Match with a Captain or Passenger</h4><p>See who's going your way, their rating, trips shared, and the car doing the lifting.</p></div></div>
+            <div class="step"><div class="step__n">3</div><div><h4>Agree the fare in chat</h4><p>Prices land inside a fair range. Counter the pickup or price right in the thread — payment only moves when you both agree.</p></div></div>
+            <div class="step"><div class="step__n">4</div><div><h4>Hop in and head off</h4><p>Meeting point pinned, live trip shared with a friend. Rate each other after, and the trust grows.</p></div></div>
+          </div>
+        </div>
+        <div class="order-media reveal" style="display:flex;justify-content:center">
+          <div class="js-phone" data-screen="chat"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TWO HATS ============ -->
+  <section class="section bg-green" id="captains">
+    <div class="container">
+      <div class="center maxw-md mx-auto reveal">
+        <p class="eyebrow no-rule" style="justify-content:center">One app · both sides of the trip</p>
+        <h2>One profile. Two hats.</h2>
+        <p class="lead mt-s">Síob isn't drivers-over-here, riders-over-there. It's a single community where you switch hats whenever it suits — your rating, trips and trust carry across both.</p>
+      </div>
+      <div class="hat-grid mt-l reveal">
+        <div class="hat hat--cap">
+          <div class="hic" data-i="wheel"></div>
+          <h3>Drive as a Captain</h3>
+          <p style="color:rgba(30,43,10,0.78);font-size:16px">Already making the trip? Fill your empty seats and offset the cost of the road.</p>
+          <div class="feat">
+            <span><span data-i="check"></span> Publish a trip you're already taking in under a minute</span>
+            <span><span data-i="check"></span> See passenger demand before you publish</span>
+            <span><span data-i="check"></span> Verified Captain badge — Garda ID & licence checked</span>
+          </div>
+        </div>
+        <div class="hat hat--pas">
+          <div class="hic" data-i="person"></div>
+          <h3>Ride as a Passenger</h3>
+          <p style="color:var(--cream-soft);font-size:16px">Need to be somewhere? Grab a seat with someone already going your way.</p>
+          <div class="feat">
+            <span><span data-i="check"></span> Search now or schedule for later in the week</span>
+            <span><span data-i="check"></span> Negotiate pickup and a fair fare in chat</span>
+            <span><span data-i="check"></span> Post an "ask" and let Captains come to you</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SAFETY TEASER ============ -->
+  <section class="section bg-cream" id="safety">
+    <div class="container">
+      <div class="split">
+        <div class="order-media reveal">
+          <div class="grid grid-2" style="gap:16px">
+            <div class="card" style="padding:22px"><div class="ic" data-i="shield"></div><h4>Verified Captains</h4><p>Licence, vehicle and Garda ID checked before anyone publishes a lift.</p></div>
+            <div class="card" style="padding:22px;margin-top:28px"><div class="ic" data-i="chat"></div><h4>Everything in-app</h4><p>Numbers stay private. Chat, agree and pay without leaving Síob.</p></div>
+            <div class="card" style="padding:22px"><div class="ic" data-i="pin"></div><h4>Share your trip</h4><p>Send a live trip link to someone you trust, every journey.</p></div>
+            <div class="card" style="padding:22px;margin-top:28px"><div class="ic" data-i="star"></div><h4>Two-way ratings</h4><p>Captains and Passengers rate each other. Reputation is everything.</p></div>
+          </div>
+        </div>
+        <div class="reveal">
+          <p class="eyebrow">Safety &amp; trust</p>
+          <h2>Built so you can hop in with confidence.</h2>
+          <p class="lead mt-s maxw-sm">Trust is the whole product. From verification to live trip sharing, every part of Síob is designed to make sharing a car with someone feel as easy as sharing with a friend.</p>
+          <a href="safety.html" class="linkarrow mt-m">How we keep Síob safe <span data-icon="arrow"></span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INVESTOR TEASER ============ -->
+  <section class="section bg-green-deep" id="investors-cta">
+    <div class="container">
+      <div class="center maxw-md mx-auto reveal">
+        <p class="eyebrow no-rule" style="justify-content:center">For investors</p>
+        <h2>Backing the shift to shared journeys.</h2>
+        <p class="lead mt-s">Ireland has one of Europe's highest rates of single-occupancy car journeys. Síob turns those empty seats into a community-owned network — starting with the routes intercity transport forgets.</p>
+      </div>
+      <div class="statrow mt-l reveal" style="max-width:920px;margin-inline:auto">
+        <div class="stat center"><div class="num"><span class="ph">[TAM]</span></div><div class="lbl">addressable intercity trips / yr</div></div>
+        <div class="stat center"><div class="num"><span class="ph">[X]%</span></div><div class="lbl">MoM beta growth</div></div>
+        <div class="stat center"><div class="num"><span class="ph">[€X]</span></div><div class="lbl">raising — seed round</div></div>
+        <div class="stat center"><div class="num"><span class="ph">2025</span></div><div class="lbl">founded, Dublin</div></div>
+      </div>
+      <div class="center mt-l reveal">
+        <a href="investors.html" class="btn btn--lime">Read the investor brief <span data-icon="arrow"></span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BETA CTA ============ -->
+  <section class="section--tight bg-lime" id="beta">
+    <div class="container">
+      <div class="split" style="align-items:center;gap:40px">
+        <div class="reveal in">
+          <h2 style="color:var(--lime-ink)">Get an early seat.</h2>
+          <p style="font-size:19px;color:rgba(30,43,10,0.78);margin-top:12px;max-width:460px">Síob is in private beta on TestFlight. Join the list and we'll send you in as we open up routes around the country.</p>
+        </div>
+        <div class="reveal in" style="display:flex;flex-direction:column;gap:14px;align-items:flex-start">
+          <a href="contact.html#beta" class="btn btn--ink btn--block" style="justify-content:space-between">Request a beta invite <span data-icon="arrow"></span></a>
+          <div class="cta-row">
+            <span class="store-badge"><span data-i="apple"></span><span><span class="sb-t">Beta on</span><span class="sb-b">TestFlight</span></span></span>
+            <span class="store-badge" style="background:rgba(30,43,10,0.10);color:var(--lime-ink)"><span data-i="play"></span><span><span class="sb-t" style="opacity:.6">Android</span><span class="sb-b">Coming soon</span></span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer"></div>
+
+<script src="assets/app-screens.js"></script>
+<script src="assets/site.js"></script>
+<script>
+  // inject phone mockups + section icons
+  (function(){
+    var SI = {
+      shield:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.6-3 8-7 9.5C8 19 5 15.6 5 11V6z"/><path d="M9 12l2 2 4-4.5"/></svg>',
+      check:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg>',
+      chat:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-4 4z"/></svg>',
+      pin:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>',
+      star:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 17l-5.2 2.6 1-5.8L3.5 9.7l5.9-.9z"/></svg>',
+      wheel:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.6"/><path d="M12 9.4V3.2M9.6 13.4 4.6 17.6M14.4 13.4l5 4.2"/></svg>',
+      person:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.4"/><path d="M5.5 20c.6-3.4 3.2-5.4 6.5-5.4S17.9 16.6 18.5 20"/></svg>',
+      apple:window.SIOB_ICON&&window.SIOB_ICON.apple,
+      play:window.SIOB_ICON&&window.SIOB_ICON.play
+    };
+    document.querySelectorAll('[data-i]').forEach(function(el){var k=el.getAttribute('data-i');if(SI[k])el.innerHTML=SI[k];});
+    document.querySelectorAll('.js-phone').forEach(function(el){
+      el.innerHTML = window.SIOB.phone(window.SIOB.screen(el.getAttribute('data-screen')), false);
+    });
+  })();
+</script>
+</body>
+</html>
